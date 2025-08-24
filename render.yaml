@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: laravel-app
+    name: HYDRA TECH
     env: php
     plan: free
     buildCommand: |
