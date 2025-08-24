@@ -26,15 +26,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $temples = Temple::take(4)->get();
-        $today = Carbon::today();
-        $festivals = Festival::where('start_date', '>=', $today)
-            ->orderBy('start_date', 'asc')
-            ->take(6)
-            ->get();
-            View::share([
-                'ftemples' => $temples,
-                'ffestivals' => $festivals
-            ]);
+        // $temples = Temple::take(4)->get();
+        // $today = Carbon::today();
+        // $festivals = Festival::where('start_date', '>=', $today)
+        //     ->orderBy('start_date', 'asc')
+        //     ->take(6)
+        //     ->get();
+        //     View::share([
+        //         'ftemples' => $temples,
+        //         'ffestivals' => $festivals
+        //     ]);
     }
 }
